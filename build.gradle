@@ -176,7 +176,7 @@ tasks.named('processResources', ProcessResources).configure {
 mixin {
     // MixinGradle Settings
     add sourceSets.main, 'mixins.mymod.refmap.json'
-    config 'mixins.immersive_ascension.json'
+    config 'mixins.more_railgun_projectiles.json'
 
     debug.verbose = true
     debug.export = true

@@ -1,4 +1,4 @@
-package net.steveson.immersiveascension;
+package net.steveson.morerailgunprojectiles;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -12,19 +12,24 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.steveson.morerailgunprojectiles.item.AddonRailgunProjectiles;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ImmersiveAscension.MOD_ID)
-public class ImmersiveAscension
+@Mod(MoreRailgunProjectiles.MOD_ID)
+public class MoreRailgunProjectiles
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "immersive_ascension";
+    public static final String MOD_ID = "more_railgun_projectiles";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public ImmersiveAscension(FMLJavaModLoadingContext context)
+    public MoreRailgunProjectiles(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+
+        AddonRailgunProjectiles.register();
+
 
         modEventBus.addListener(this::commonSetup);
 
