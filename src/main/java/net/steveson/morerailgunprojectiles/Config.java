@@ -34,9 +34,19 @@ public class Config
             .comment("Amount of damage a Uranium Rod should inflict")
             .defineInRange("uraniumRodDamage", 30, 0, Double.MAX_VALUE);
 
+    private static final ForgeConfigSpec.BooleanValue ENABLE_CONSTANTAN = BUILDER
+            .comment("Whether the Railgun should be able to fire Constantan Rods")
+            .define("fireConstantanRods", true);
+    private static final ForgeConfigSpec.DoubleValue CONSTANTAN_DAMAGE = BUILDER
+            .comment("Amount of damage a Constantan Rod should inflict")
+            .defineInRange("constantanRodDamage", 22, 0, Double.MAX_VALUE);
 
-
-
+    private static final ForgeConfigSpec.BooleanValue ENABLE_ELECTRUM = BUILDER
+            .comment("Whether the Railgun should be able to fire Electrum Rods")
+            .define("fireElectrumRods", true);
+    private static final ForgeConfigSpec.DoubleValue ELECTRUM_DAMAGE = BUILDER
+            .comment("Amount of damage a Electrum Rod should inflict")
+            .defineInRange("ElectrumRodDamage", 10, 0, Double.MAX_VALUE);
 
 
 
@@ -52,7 +62,10 @@ public class Config
     public static double leadDamage;
     public static boolean fireUraniumRods;
     public static double uraniumDamage;
-
+    public static boolean fireConstantanRods;
+    public static double constantanDamage;
+    public static boolean fireElectrumRods;
+    public static double electrumDamage;
 
 
     public static Set<Item> items;
@@ -69,6 +82,10 @@ public class Config
         leadDamage = LEAD_DAMAGE.get();
         fireUraniumRods = ENABLE_URANIUM.get();
         uraniumDamage = URANIUM_DAMAGE.get();
+        fireConstantanRods = ENABLE_CONSTANTAN.get();
+        constantanDamage = CONSTANTAN_DAMAGE.get();
+        fireElectrumRods = ENABLE_ELECTRUM.get();
+        electrumDamage = ELECTRUM_DAMAGE.get();
 
 
         // convert the list of strings into a set of items

@@ -12,6 +12,10 @@ public class AddonRailgunProjectiles {
     private static final double D_LEAD = Config.leadDamage;
     private static final boolean B_URANIUM = Config.fireUraniumRods;
     private static final double D_URANIUM = Config.uraniumDamage;
+    private static final boolean B_CONSTANTAN = Config.fireConstantanRods;
+    private static final double D_CONSTANTAN = Config.constantanDamage;
+    private static final boolean B_ELECTRUM = Config.fireConstantanRods;
+    private static final double D_ELECTRUM = Config.electrumDamage;
 
     public static void register(){
 
@@ -29,12 +33,13 @@ public class AddonRailgunProjectiles {
             );
         }
         // Constantan
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_CONSTANTAN, 22, 1.25).setColorMap(
-                new RailgunHandler.RailgunRenderColors(0xdc856a, 0xdc856a, 0xdc856a, 0xa3624e, 0x7a4a3b, 0x7a4a3b)
-        );
-
+        if(true) {
+            RailgunHandler.registerStandardProjectile(MRPTags.RODS_CONSTANTAN, 22, 1.25).setColorMap(
+                    new RailgunHandler.RailgunRenderColors(0xdc856a, 0xdc856a, 0xdc856a, 0xa3624e, 0x7a4a3b, 0x7a4a3b)
+            );
+        }
         // Electrum
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_ELECTRUM, 10, 1.25).setColorMap(
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_ELECTRUM, D_ELECTRUM, 1.25).setColorMap(
                 new RailgunHandler.RailgunRenderColors(0xffd051, 0xffd051, 0xffd051, 0xdcb446, 0xa38434, 0xa38434)
         );
 
