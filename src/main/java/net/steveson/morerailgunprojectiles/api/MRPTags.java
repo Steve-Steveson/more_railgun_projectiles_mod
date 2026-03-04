@@ -20,9 +20,18 @@ public class MRPTags {
     }
 
     public static final TagKey<Item> RODS_CONSTANTAN = commonTag("rods/constantan");
+    public static final TagKey<Item> RODS_URANIUM = commonTag("rods/uranium");
+    public static final TagKey<Item> RODS_LEAD = commonTag("rods/lead");
+    public static final TagKey<Item> RODS_ELECTRUM = commonTag("rods/electrum");
+
+    public static final TagKey<Item> RODS_NICKEL = commonTag("rods/nickel");
+    public static final TagKey<Item> RODS_COPPER = commonTag("rods/copper");
+    public static final TagKey<Item> RODS_GOLD = commonTag("rods/gold");
+    public static final TagKey<Item> RODS_SILVER = commonTag("rods/silver");
+
     public static final TagKey<Item> RODS_BRONZE = commonTag("rods/bronze");
 
-    public static final TagKey<Item> RODS_GOLD = commonTag("rods/gold");
+
 
 
     private static TagKey<Item> commonTag(String name) {
