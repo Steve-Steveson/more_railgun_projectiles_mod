@@ -27,7 +27,7 @@ public class MRPTags {
 
     private static TagKey<Item> commonTag(String name) {
 
-        return ItemTags.create(new ResourceLocation("c", name));
+        return ItemTags.create(new ResourceLocation("forge", name));
     }
 
 
