@@ -29,8 +29,8 @@ public class MRPTags {
     public static final TagKey<Item> RODS_GOLD = commonTag("rods/gold");
     public static final TagKey<Item> RODS_SILVER = commonTag("rods/silver");
 
+    public static final TagKey<Item> RODS_BRASS = commonTag("rods/brass");
     public static final TagKey<Item> RODS_BRONZE = commonTag("rods/bronze");
-
 
 
 
