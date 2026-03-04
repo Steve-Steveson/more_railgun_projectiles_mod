@@ -3,22 +3,31 @@ package net.steveson.morerailgunprojectiles.item;
 import blusunrize.immersiveengineering.api.IETags;
 import blusunrize.immersiveengineering.api.tool.RailgunHandler;
 import net.minecraftforge.common.Tags;
+import net.steveson.morerailgunprojectiles.Config;
 import net.steveson.morerailgunprojectiles.api.MRPTags;
 
 public class AddonRailgunProjectiles {
 
+    private static final boolean B_LEAD = Config.fireLeadRods;
+    private static final double D_LEAD = Config.leadDamage;
+    private static final boolean B_URANIUM = Config.fireUraniumRods;
+    private static final double D_URANIUM = Config.uraniumDamage;
+
     public static void register(){
 
+
         // Lead
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_LEAD, 20, 30).setColorMap(
-                new RailgunHandler.RailgunRenderColors(0x5a6074, 0x5a6074, 0x5a6074, 0x424656, 0x2a2e37, 0x2a2e37)
-        );
-
+        if(B_LEAD){
+            RailgunHandler.registerStandardProjectile(MRPTags.RODS_LEAD, D_LEAD, 60).setColorMap(
+                    new RailgunHandler.RailgunRenderColors(0x5a6074, 0x5a6074, 0x5a6074, 0x424656, 0x2a2e37, 0x2a2e37)
+            );
+        }
         // Uranium
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_URANIUM, 30, 100).setColorMap(
-                new RailgunHandler.RailgunRenderColors(0x6e7f64, 0x6e7f64, 0x6e7f64, 0x515d4a, 0x343c2f, 0x343c2f)
-        );
-
+        if(B_URANIUM) {
+            RailgunHandler.registerStandardProjectile(MRPTags.RODS_URANIUM, D_URANIUM, 150).setColorMap(
+                    new RailgunHandler.RailgunRenderColors(0x6e7f64, 0x6e7f64, 0x6e7f64, 0x515d4a, 0x343c2f, 0x343c2f)
+            );
+        }
         // Constantan
         RailgunHandler.registerStandardProjectile(MRPTags.RODS_CONSTANTAN, 22, 1.25).setColorMap(
                 new RailgunHandler.RailgunRenderColors(0xdc856a, 0xdc856a, 0xdc856a, 0xa3624e, 0x7a4a3b, 0x7a4a3b)
@@ -55,6 +64,14 @@ public class AddonRailgunProjectiles {
         RailgunHandler.registerStandardProjectile(MRPTags.RODS_BRASS, 9, 1.25).setColorMap(
                 new RailgunHandler.RailgunRenderColors(0xfff4a3, 0xfff4a3, 0xfff4a3, 0xe4c66a, 0xe4c66a, 0xc9974c)
         );
+
+
+        // Iron
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_WROUGHT_IRON, 16, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xd8d8d8, 0xd8d8d8, 0xd8d8d8, 0xa8a8a8, 0x686868, 0x686868)
+        );
+
+
 
         // Bronze
         RailgunHandler.registerStandardProjectile(MRPTags.RODS_BRONZE, 13, 1.25).setColorMap(
