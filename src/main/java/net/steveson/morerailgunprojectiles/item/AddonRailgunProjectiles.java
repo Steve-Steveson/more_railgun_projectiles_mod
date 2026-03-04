@@ -9,18 +9,13 @@ public class AddonRailgunProjectiles {
 
     public static void register(){
 
-//        // Stick
-//        RailgunHandler.registerStandardProjectile(Tags.Items.RODS_WOODEN, 8, 1.25).setColorMap(
-//                new RailgunHandler.RailgunRenderColors(0xff0000, 0x00ff00, 0x0000ff, 0xffff00, 0xff00ff, 0x00ffff)
-//        );
-
         // Lead
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_LEAD, 20, 3.0).setColorMap(
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_LEAD, 20, 30).setColorMap(
                 new RailgunHandler.RailgunRenderColors(0x5a6074, 0x5a6074, 0x5a6074, 0x424656, 0x2a2e37, 0x2a2e37)
         );
 
         // Uranium
-        RailgunHandler.registerStandardProjectile(MRPTags.RODS_URANIUM, 30, 10).setColorMap(
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_URANIUM, 30, 100).setColorMap(
                 new RailgunHandler.RailgunRenderColors(0x6e7f64, 0x6e7f64, 0x6e7f64, 0x515d4a, 0x343c2f, 0x343c2f)
         );
 
@@ -66,6 +61,61 @@ public class AddonRailgunProjectiles {
                 new RailgunHandler.RailgunRenderColors(0xcfbcaa, 0xcfbcaa, 0xcfbcaa, 0xaf8e6f, 0x7f9247, 0x7f9247)
         );
 
+        // Bismuth Bronze
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_BISMUTH_BRONZE, 12, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xc4dfce, 0xc4dfce, 0xc4dfce, 0x639074, 0x346544, 0x346544)
+        );
 
+        // Black Bronze
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_BLACK_BRONZE, 14, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xb28db2, 0xb28db2, 0xb28db2, 0x614262, 0x25142a, 0x25142a)
+        );
+
+        // Cast Iron
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_CAST_IRON, 18, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0x503d32, 0x503d32, 0x503d32, 0x322827, 0x211a19, 0x211a19)
+        );
+
+        // Black Steel
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_BLACK_STEEL, 32, 30).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0x878787, 0x878787, 0x878787, 0x505050, 0x0f0f0f, 0x0f0f0f)
+        );
+
+        // Red Steel
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_RED_STEEL, 40, 60).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xc8575d, 0xc8575d, 0xc8575d, 0x902127, 0x560307, 0x560307)
+        );
+
+        // Blue Steel
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_BLUE_STEEL, 40, 60).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xd0e1f0, 0xd0e1f0, 0xd0e1f0, 0x7a87b7, 0x586a9e, 0x586a9e)
+        );
+
+
+        // Rose Gold
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_ROSE_GOLD, 10, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xffbd54, 0xffbd54, 0xea6500, 0xea6500, 0xea6500, 0x770e04)
+        );
+
+        // Sterling Silver
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_STERLING_SILVER, 9, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xf2e4da, 0xf2e4da, 0xf2e4da, 0xbdaa9b, 0x9e8574, 0x9e8574)
+        );
+
+
+        // Bismuth
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_BISMUTH, 5, 30).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xb1c1c4, 0xb1c1c4, 0xb1c1c4, 0x7d959b, 0x445b60, 0x445b60)
+        );
+
+        // Zinc
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_ZINC, 7, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xffffff, 0xffffff, 0xffffff, 0xeaecec, 0xc6c4cf, 0xc6c4cf)
+        );
+
+        // Tin
+        RailgunHandler.registerStandardProjectile(MRPTags.RODS_TIN, 6, 1.25).setColorMap(
+                new RailgunHandler.RailgunRenderColors(0xf3efef, 0xf3efef, 0xf3efef, 0xd7e0ea, 0xbbc6d4, 0xbbc6d4)
+        );
     }
 }
